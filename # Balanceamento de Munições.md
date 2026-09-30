@@ -1,5 +1,9 @@
 # Balanceamento de Munições
 
+**Status:** proposta de dano base e especializações implementada na v1.4.0, conforme notas do jogador; balanceamento final e arquitetura interna ainda não validados.
+
+**Atualização:** Ferro como referência de 100%; munições especiais trocam dano direto por efeitos. Explosiva anunciada com 85% no alvo e 60% em área. Retestar o dano combinado no alvo principal, pois adotar essa estrutura não comprova que a dominância em alvo único foi resolvida. Os exemplos abaixo são o histórico da sugestão, não os valores atuais.
+
 ## Problema atual
 
 A munição explosiva possui dano adicional em área ao atingir o alvo, mas mesmo contra **um único inimigo** continua sendo uma das melhores opções de dano.

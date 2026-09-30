@@ -1,10 +1,14 @@
 # Observações de balanceamento
 
+Atualizações da v1.4.0 registradas conforme notas do jogador, sem reteste. Relatos e capturas anteriores permanecem como histórico.
+
 Registro de percepções e pontos a medir durante o QA. Usar IDs sequenciais. Uma percepção de desbalanceamento não confirma um bug nas regras ou nos cálculos.
 
 ## BAL-001 — EXP de missões repetitivas e ritmo de progressão
 
-**Status:** percepção do teste manual; valores e ritmo ainda não medidos.
+**Status:** ajuste implementado na v1.4.0; reteste de balanceamento pendente.
+
+**Atualização informada:** EXP das missões repetitivas reduzida; medir o novo ritmo.
 
 **Relato:** missões repetitivas que concedem EXP a cada 16 monstros mortos parecem dar EXP demais e incentivam repetir sempre a mesma atividade. A preocupação é que subir de nível fique rápido demais e pouco variado.
 
@@ -18,7 +22,9 @@ Registro de percepções e pontos a medir durante o QA. Usar IDs sequenciais. Um
 
 ## BAL-002 — Densidade de NPCs e dificuldade dos Almirantes
 
-**Status:** ponto de investigação baseado no teste manual; densidade e dificuldade ainda não medidas.
+**Status:** ajuste implementado na v1.4.0; reteste de balanceamento pendente.
+
+**Atualização informada:** Almirantes não puxam mais NPCs próximos. Densidade geral e proposta solo/grupo continuam em análise.
 
 **Relato:** os mapas parecem ter muitos NPCs/monstros próximos. Enfrentar um Almirante fica difícil porque ele já é mais poderoso e outros NPCs se acumulam nos arredores, aumentando a pressão durante o combate.
 
@@ -43,7 +49,9 @@ Comparar o encontro com e sem NPCs adicionais para separar a força do Almirante
 
 ## BAL-003 — Salva Dupla e impacto da aleatoriedade no combate
 
-**Status:** preocupação de balanceamento; impacto ainda não medido.
+**Status:** alteração específica pendente de confirmação nas notas truncadas.
+
+**Atualização informada:** Árvores de talentos recriadas, mas o trecho sobre Salva Dupla veio truncado; remoção ou alteração ainda não confirmada.
 
 **Efeito exibido:** o talento Salva Dupla, da árvore Artilharia, informa **15% de chance de disparar uma segunda salva imediatamente**. A descrição não informa o dano da segunda salva.
 
@@ -65,7 +73,9 @@ Avaliar separadamente PvE e PvP: um ganho médio aceitável pode esconder picos 
 
 ## BAL-004 — Kit de Reparo: progressão e vantagem do VIP
 
-**Status:** revisão da percepção inicial de nerf; diferenças entre fases e VIP precisam ser medidas.
+**Status:** ajuste implementado na v1.4.0; reteste de balanceamento pendente.
+
+**Atualização informada:** VIP passa de restauração integral para +50%, mantendo reparo em movimento. Trecho sobre reparo comum truncado; conferir regras e comparar early/late game.
 
 ### Regras exibidas nas capturas
 
@@ -101,7 +111,9 @@ Investigar separadamente a cura gradual, a interrupção dos ataques, a imobilid
 
 ## BAL-005 — Perda de ouro por naufrágio e tempo de recuperação
 
-**Status:** ponto de análise econômica; fórmula e impacto ainda não medidos.
+**Status:** ajuste implementado na v1.4.0; reteste de balanceamento pendente.
+
+**Atualização informada:** Perda continua em 5%, agora com teto por nível; medir tempo de recuperação.
 
 **Relato:** atualmente o naufrágio desconta uma porcentagem do ouro que o jogador possui. Avaliar se a perda é proporcional ao ritmo de obtenção de ouro ou se pode consumir o equivalente a várias horas ou dias de farm, especialmente quando o jogador acumula recursos.
 
@@ -123,7 +135,9 @@ Definir uma faixa desejada de esforço para recuperar a perda, mantendo consequ�
 
 ## BAL-006 — Leviatã Primordial: resposta à fase de submersão
 
-**Status:** percepção do teste manual; dano, gatilho e possibilidades de reação ainda não medidos.
+**Status:** ajuste implementado na v1.4.0; reteste de balanceamento pendente.
+
+**Atualização informada:** Golpe de emergência sinalizado em vermelho e posição travada 2 segundos antes, permitindo desvio; Casco Selado também adicionado.
 
 **Relato:** o boss é desafiador, mas ao passar de aproximadamente metade da vida submerge e reaparece em cima do jogador. O dano é percebido como praticamente uma morte instantânea, sem uma ação eficaz que o jogador consiga tomar para responder.
 
