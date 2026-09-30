@@ -1,5 +1,21 @@
 # Observações de balanceamento
 
+## BAL-007 — Classificação dos bots da arena para bônus PvP
+
+**Data:** 30/09/2026.
+
+**Status:** dúvida de regra e validação pendente; não confirmado como bug.
+
+**Questão:** os bots da arena são tratados como jogadores para modificadores de combate? Em particular, a munição Sangrenta recebe seu bônus contra jogadores ao atingir esses bots, ou aplica o modificador contra NPCs?
+
+**Referência:** a captura mostra a Arena 3v3, mas não demonstra o dano causado nem a classificação interna dos alvos.
+
+**O que verificar:** identificar a regra pretendida para bots que substituem jogadores e conferir a classificação usada no cálculo de dano. Comparar Sangrenta e uma munição de referência contra bot da arena, jogador humano e NPC comum, controlando build, defesa, buffs e críticos. Comparar o ganho relativo em cada alvo, sem atribuir diferenças de dano bruto apenas à classificação.
+
+Se a arena com bots pretende reproduzir PvP, avaliar aplicar os mesmos modificadores de alvo usados contra jogadores. Se houver uma regra diferente, deixá-la clara ao jogador. Só registrar como bug após identificar divergência entre a regra definida e o comportamento observado.
+
+![Arena 3v3 como referência para a classificação dos bots](evidencias/BAL-007-bots-arena.png)
+
 Atualizações da v1.4.0 registradas conforme notas do jogador, sem reteste. Relatos e capturas anteriores permanecem como histórico.
 
 Registro de percepções e pontos a medir durante o QA. Usar IDs sequenciais. Uma percepção de desbalanceamento não confirma um bug nas regras ou nos cálculos.

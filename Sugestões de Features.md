@@ -292,6 +292,18 @@ Exibir um indicativo perceptível quando a mochila atingir sua capacidade, inclu
 
 ![Interface da mochila como referência para o aviso de capacidade](evidencias/FEAT-024-aviso-mochila.png)
 
+## FEAT-025 — Custo e estoque claros ao alimentar mascotes
+
+**Status:** sugestão de clareza da interface, registrada em 30/09/2026.
+
+Mostrar junto da ação **Alimentar** qual recurso será usado, quanto será consumido por alimentação e quantas unidades o jogador possui. Exibir também o saldo restante previsto, por exemplo: **Consumir 3 [material] · Disponível: 12 · Restam: 9**.
+
+**Contexto:** a tela informa no texto geral que a alimentação usa Petiscos ou 3 unidades de material regional, mas os botões não identificam o recurso e o custo da ação específica.
+
+**Pontos a definir:** permitir escolher o recurso ou deixar explícita a prioridade automática de consumo. Identificar materiais por nome e ícone; atualizar o estoque após alimentar e explicar a falta de recursos quando o botão estiver desabilitado. Não consumir um material alternativo sem tornar essa escolha clara ao jogador.
+
+![Tela de mascotes como referência para custo e estoque da alimentação](evidencias/FEAT-025-alimentar-mascote.png)
+
 ## Referências visuais
 
 Capturas da interface de equipamentos, inventário e atributos usadas como contexto para as sugestões. Elas não comprovam a ausência dos recursos propostos.

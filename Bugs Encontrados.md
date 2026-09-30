@@ -2,6 +2,58 @@
 
 Registro dos problemas encontrados durante os testes do jogo. Adicionar novos casos com IDs sequenciais e atualizar o status conforme forem investigados, corrigidos e retestados.
 
+## BUG-007 — Expedição termina sem aviso e jogador permanece em mapa sem NPCs
+
+- **Data do relato:** 30/09/2026.
+- **Status:** aberto — relatado durante teste manual; reprodução independente pendente.
+- **Sistema:** encerramento e saída de expedições.
+- **Impacto:** jogador não consegue identificar se a expedição terminou ou se retornou ao mundo normal; continuidade do jogo prejudicada pela ausência de NPCs relatada.
+
+### Comportamento observado
+
+Após finalizar uma expedição, não apareceu indicação de conclusão ou saída. Segundo o jogador, o jogo permaneceu em um mapa sem NPCs.
+
+A captura mostra a carta náutica identificada como Trono do Leviatã e o marcador do Leviatã Primordial com “volta em 0:00”. Ela não comprova, sozinha, a ausência de NPCs no mundo nem se o jogador ainda estava na instância da expedição.
+
+### Comportamento esperado
+
+Informar claramente a conclusão da expedição e o resultado, além de disponibilizar ou executar a saída conforme a regra do jogo. Ao retornar ao mapa normal, restaurar seu funcionamento e a presença de NPCs conforme as regras de surgimento.
+
+### Caminho para tentar reproduzir
+
+1. Iniciar uma expedição e cumprir seus objetivos até a conclusão.
+2. Observar se aparece uma mensagem ou tela de resultado e indicação de saída.
+3. Verificar o estado da expedição, o mapa atual e a presença de NPCs após o encerramento.
+
+### Dados a coletar e reteste
+
+Registrar nome da expedição, último objetivo, forma de saída e tempo de espera após a conclusão. Investigar separadamente a notificação de resultado, a transição de instância e o carregamento/surgimento dos NPCs, sem presumir a causa. Confirmar também a entrega das recompensas uma única vez e a possibilidade de continuar jogando ou iniciar outra expedição.
+
+![Carta náutica após o encerramento relatado da expedição](evidencias/BUG-007-fim-expedicao.png)
+
+## BUG-006 — Brilho de nível máximo altera as cores do mascote
+
+- **Data do relato:** 30/09/2026.
+- **Status:** aberto — problema visual relatado, com duas capturas.
+- **Sistema:** aparência dos mascotes; efeito de brilho no nível máximo.
+- **Impacto:** perda das cores e da identidade visual do mascote.
+
+### Comportamento observado
+
+Segundo o relato, ao atingir o nível máximo o mascote recebe um brilho que muda completamente sua coloração para um amarelo uniforme. As capturas mostram dois mascotes com tonalidade amarela e partículas de brilho; não há comparação com a aparência anterior nas imagens.
+
+### Comportamento esperado e direção sugerida
+
+O brilho deve destacar a evolução sem substituir as cores originais. Ajustar o efeito para preservar a aparência do mascote, usando, por exemplo, partículas, contorno luminoso ou brilho de intensidade moderada. A causa técnica ainda não foi investigada.
+
+### Critério para reteste
+
+Comparar a aparência antes e depois do nível máximo em diferentes mascotes e condições de iluminação. Confirmar que o brilho é perceptível sem apagar suas cores e detalhes.
+
+![Mascote com coloração amarela e brilho — captura 1](evidencias/BUG-006-brilho-pet-1.png)
+
+![Mascote com coloração amarela e brilho — captura 2](evidencias/BUG-006-brilho-pet-2.png)
+
 ## BUG-005 — Alinhamento da interface do Castelo
 
 - **Data do relato:** 29/09/2026.
